@@ -1,0 +1,52 @@
+<script type="text/javascript">
+window.mainPageTitle = 'Main Page';
+ShopifyApp.ready(function(){
+	ShopifyApp.Bar.initialize({
+		title: 'Get Started',
+		icon: '/icon.png',
+        buttons: {
+          primary: [
+			  {label: "Support", loading: false, href: "mailto:support@shopify-for-gmail.com" }
+          ]
+        }
+});
+});
+</script>
+  
+<div class="container">
+	<div class="get-started">
+		<ol class="timeline-list">
+			<div id="onboardingmsg"></div>
+			<li class="timeline-item timeline-item-type-milestone next-card">
+				<div class="timeline-content next-card__section--home-padding">
+					<h2 class="activity-message">
+						Install the Shopify for Gmail Shopify App<br>
+						<span>So we can connect to your store.</span>
+					</h2>
+					<div class="btn step-completed">Install the App</div>
+				</div>
+			</li>
+
+			<li class="timeline-item timeline-item-type-milestone next-card">
+				<div class="timeline-content next-card__section--home-padding">
+					<h2 class="activity-message">
+						Install the Shopify for Gmail Chrome Extension<br>
+						<span>So we can securely connect your store to Gmail.</span>
+					</h2>
+					<div class="btn">Install the Extension</div>
+				</div>
+			</li>
+
+			<li class="timeline-item timeline-item-type-milestone next-card">
+				<div class="timeline-content next-card__section--home-padding">
+					<h2 class="activity-message">
+						Go to Gmail to manage your Orders<br>
+						<span>So you can save time and money.</span>
+					</h2>
+					<div id="gotogmail" class="btn">Go to Gmail</div>
+				</div>
+			</li>
+		</ol>
+	</div>
+</div>
+

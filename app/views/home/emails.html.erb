@@ -1,0 +1,47 @@
+<script type="text/javascript">
+  window.mainPageTitle = 'Allowed Users';
+
+  ShopifyApp.ready(function(){
+    ShopifyApp.Bar.initialize({
+        title: window.mainPageTitle,
+        icon: '/icon.png',
+        buttons: {
+          primary: {
+            label: "Add User",
+            message: 'save-user-form-message'
+          },
+          secondary: {
+            label: "Back",
+            href: "/",
+            target: 'app'
+          }
+        }
+    });
+	
+  <% if flash[:notice] %>
+    ShopifyApp.flashNotice("<%= flash[:notice] %>");
+  <% end %>
+
+  <% if flash[:error] %>
+    ShopifyApp.flashError("<%= flash[:error] %>");
+  <% end %>
+	
+  });
+</script>
+  
+<h1>Allowed Users</h1>
+
+<p>A normal form submitted by a data tag and a button in Shopify. Embedded apps can mostly work exactly like a normal app, except with Shopify admin UI integration.</p>
+
+<form method="POST" action="emails" data-shopify-app-submit="save-user-form-message">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <p>
+    <label>Name:</label>
+    <input type="text" name="name"/>
+  </p>
+  <p>
+    <label>Email:</label>
+    <input type="text" name="email"/>
+  </p>
+
+</form>

@@ -1,0 +1,190 @@
+body {
+  line-height: 18px;
+  font-size: 13px;
+  color: #31373d;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+.container {
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212529;
+  font-weight: 400;
+  margin: 0;
+}
+.btn {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8.5px 15px;
+  border-radius: 3px;
+  font-size: 13px;
+  line-height: 1;
+  height: auto;
+  white-space: nowrap;
+  text-transform: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+}
+.btn-default, .btn {
+  background-color: white;
+  color: #479ccf;
+  border: 1px solid #d3dbe2;
+}
+.btn-primary {
+  background-color: #479ccf;
+  color: white;
+  border: 1px solid #479ccf;
+}
+
+.get-started {
+	margin-top: 30px;
+}
+.timeline-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  -webkit-padding-start: 0;
+}
+#onboardingmsg {
+    font-size: 21px;
+    margin: 20px 0;
+    text-align: center;
+}
+.next-card {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  color: #31373d;
+}
+.timeline-feed .next-card, .timeline-feed .timeline-footer {
+  -webkit-transition: -webkit-transform 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.timeline-list .next-card {
+  margin: 0 0 10px;
+}
+.timeline-feed--is-active .next-card, .timeline-feed--is-active .timeline-footer {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.timeline-content {
+	color: #798c9c;
+	padding: 25px 20px;
+}
+.timeline-content h2 {
+  font-size: 15px;
+  float:left;
+}
+.timeline-content div {
+  float: right;
+}
+.timeline-content h2 span {
+    font-size: 14px;
+    color: #798c9c;
+    top: 3px;
+    position: relative;
+}
+.step-completed {
+    background-image: url('//s3-sa-east-1.amazonaws.com/ms-frontend/checkout/completed-step.svg'),none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    border-radius: 25px;
+}
+.clearfix:after, .dropdown-header:after, .global-search__list-item a:after, .report-category-wrapper:after, ul.horizontal:after, ol.horizontal:after, .row:after, .header-row:after, .modal header:after, .modal-section:after, .box.actions:after, .inset-header-notice:after, .box-details .box-header:after, .box-details .box-header .inline-action-links:after, .box-details .box-footer:after, .content-index__item:after, .tabs:after, .timeline-content:after, #gift-card-default-values-lst:after, .fp-section-fixed-width .fp-section-cols:after, .tutorial:after, .bar-graph-list .stat-wrapper:after, .bar-graph-list.top-countries-list:after, .linklist-link:after, .scale:after, .color-control:after, .checkout-optional-fields .box-content:after, .checkout-optional-fields .content-index__item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+*/

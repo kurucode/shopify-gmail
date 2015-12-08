@@ -1,0 +1,13 @@
+[
+<% @orders.each do |order| -%>
+    {
+	"id" : "<%= order.id %>",
+	"order_number" : "<%= order.order_number %>",
+	"created_at" : "<%= order.created_at %>",
+	"name" : "<%= order.customer.first_name %> <%= order.customer.last_name %>",
+	"financial_status" : "<%= order.financial_status %>",
+	"fulfillment_status" : "<%= order.fulfillment_status %>",
+	"price" : "<%= order.total_price %> <%= order.currency %>"
+  }<% if order != @orders.last -%>,<% end -%>
+  <% end -%>
+]
